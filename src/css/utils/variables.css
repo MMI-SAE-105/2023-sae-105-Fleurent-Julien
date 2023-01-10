@@ -1,0 +1,19 @@
+:root {
+    /* Color styles */
+    --menu: #40362A;
+    --header: #9C866B;
+    --texte: #000000;
+    --quartz: #F5F2F2;
+    --blanc: #FFFFFF;
+
+    /* Text-size styles */
+    /* base size: body (15px) */
+    --titre: 6.67rem;
+    --header-1: 4.67rem;
+    --header-2: 2rem;
+    --bouton: 1.67rem;
+    --footer: 1.33rem;
+    --body: 1rem;
+    --caption: 1.2rem;
+    --form: 1.07rem;
+}
