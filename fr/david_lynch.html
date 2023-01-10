@@ -45,13 +45,16 @@
     <section>
         <h2 class="body__title">Œuvres créé</h2>
 
-
-
-
         <div class="carrousel" x-data="{hrefCourant:'#image-1', '#image-2', '#image-3'}">
-            <li><a href="#image-1" :class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
-            <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}">ecran 2</a></li>
-            <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}">ecran 3</a></li>
+            <li class="carrousel_list"><a href="#image-1" class="carrousel_nom"
+                    :class="{actif:hrefCourant==='#image-1'}">Fisherman's Dream
+                    with Steam Iron</a></li>
+            <li class="carrousel_list"><a href="#image-2" class="carrousel_nom"
+                    :class="{actif:hrefCourant==='#image-2'}">A Figure Witnessing
+                    the Ocherstration of
+                    Time</a></li>
+            <li class="carrousel_list"><a href="#image-3" class="carrousel_nom"
+                    :class="{actif:hrefCourant==='#image-3'}">Untitled</a></li>
 
             <img src="/public/img/fleche_droite.svg" alt="icone fleche gauche" class="carrousel_btn carrousel_btn-avant"
                 aria-label="slide précedant" @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth">
@@ -69,20 +72,21 @@
                 <div id="image-1" class="carrousel_ecran">
                     <figure>
                         <img src="/public/img/lynch_fisherman.webp" alt="Oeuvre de David Lynch" class="carrousel_img">
-                        <figcaption>Fisherman's Dream with Steam Iron</figcaption>
+                        <figcaption class="body__text">Fisherman's Dream with Steam Iron</figcaption>
                     </figure>
                 </div>
                 <div id="image-2" class="carrousel_ecran">
                     <figure>
                         <img src="/public/img/lynch_a_figure_witnessing.webp" alt="Oeuvre de David Lynch"
                             class="carrousel_img">
-                        <figcaption>A Figure Witnessing the Ocherstration of Time</figcaption>
+                        <figcaption class="figcaption__text">A Figure Witnessing the Ocherstration of Time
+                        </figcaption>
                     </figure>
                 </div>
                 <div id="image-3" class="carrousel_ecran block__art">
                     <figure>
                         <img src="/public/img/untitled.webp" alt="Oeuvre de David Lynch" class="carrousel_img">
-                        <figcaption>Untitled</figcaption>
+                        <figcaption class="body__text">Untitled</figcaption>
                     </figure>
                 </div>
             </div>
