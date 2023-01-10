@@ -9,3 +9,8 @@
     margin-inline: auto;
     display: flex;
 }
+
+.artist_detail {
+    width: 70%;
+    margin-left: 15%;
+}

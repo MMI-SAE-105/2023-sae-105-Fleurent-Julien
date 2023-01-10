@@ -1,0 +1,18 @@
+.header__menu {
+    justify-content: end;
+}
+
+.menu__item {
+    text-align: end;
+    list-style-type: none;
+    padding-bottom: 10%;
+    margin-right: 10%;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: var(--blanc);
+    font-size: var(--header-2);
+    font-family: 'work sans';
+
+}

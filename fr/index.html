@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     <link rel="alternate" hreflang="en" href="http://en.neo-dream.fr">
     <link rel="icon" href="/public/img/logo_musee.svg">
     <link rel="stylesheet" href="/src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 
 <body>
@@ -19,7 +20,14 @@
             <div class="header__item">
                 <p class="header__content">neo dream</p>
             </div>
-            <div class="header__item"><a href=""><img src="/public/img/menu.svg" alt="menu hamburger"></a></div>
+            <div class="header__item"><img src="/public/img/menu.svg" alt="menu hamburger" aria-controls="mainNav"
+                    @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"></div>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                <ul>
+                    <li class="menu__item"><a href="/fr/artistes.html">Artistes</a></li>
+                    <li class="menu__item"><a href="/fr/contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 

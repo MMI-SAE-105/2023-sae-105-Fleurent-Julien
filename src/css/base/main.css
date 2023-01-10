@@ -33,3 +33,64 @@ body {
     font-family: 'work sans';
     font-size: var(--body);
 }
+
+/* Bouton carrousel */
+
+.carrousel_parent-ecrans {
+    display: flex;
+    max-width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    margin-top: 20%;
+    margin-bottom: 50%;
+}
+
+.carrousel_ecran {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+}
+
+.carrousel_ecran figure {
+    margin: 0;
+}
+
+.carrousel {
+    position: relative;
+}
+
+.carrousel_btn {
+    position: absolute;
+    top: 300px;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+}
+
+.carrousel_btn-avant {
+    left: 0;
+}
+
+.carrousel_btn-apres {
+    right: 0;
+}
+
+.caroussel_liste-liens {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+.carrousel figcaption {
+    font-family: 'kanit';
+    font-size: var(--header-3);
+    margin-left: 45%;
+}
