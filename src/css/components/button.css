@@ -1,0 +1,25 @@
+.button {
+
+    /* Positionnement du bouton */
+
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 20%;
+    display: block;
+    color: var(--blanc);
+    border-radius: 10px 10px;
+    padding: 10px 10px;
+    background-color: var(--header);
+    border-color: var(--menu);
+
+    /* Police du bouton */
+
+    text-decoration: none;
+    font-size: var(--bouton);
+    font-family: 'work sans';
+    font-weight: 600;
+    text-align: center;
+
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+}

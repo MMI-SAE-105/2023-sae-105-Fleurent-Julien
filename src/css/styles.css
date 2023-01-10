@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Square+Peg&family=Work+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Square+Peg&family=Work+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 /* Vendors */
 @import url(vendors/normalize.css);
@@ -8,7 +8,12 @@
 @import url(utils/variables.css);
 
 /* Base */
+@import url(base/font.css);
+@import url(base/main.css);
 
 /* Layout */
+@import url(layout/header.css);
+@import url(layout/footer.css);
 
 /* Components */
+@import url(components/button.css);

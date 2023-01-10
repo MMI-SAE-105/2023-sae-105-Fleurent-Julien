@@ -1,0 +1,51 @@
+.header {
+    background-color: var(--header);
+    z-index: 1;
+}
+
+.header__item {
+    display: inline-block;
+    vertical-align: middle;
+    justify-content: space-between;
+    margin-right: 7%;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.header__content {
+    color: var(--blanc);
+    font-size: 30px;
+    font-family: 'Allerta Stencil';
+}
+
+.header__img {
+    position: relative;
+    max-width: 100%;
+    z-index: -1;
+}
+
+.header__title {
+    position: absolute;
+    top: 40%;
+    color: var(--blanc);
+}
+
+.header__text {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: absolute;
+    font-size: var(--bouton);
+    font-weight: 600;
+    margin-top: -80%;
+    font-family: 'work sans';
+    color: var(--blanc);
+}
+
+.header__title {
+    color: var(--blanc);
+    font-size: var(--titre);
+    text-align: center;
+    font-family: 'Allerta Stencil';
+    margin-top: -40%;
+}

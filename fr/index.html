@@ -12,61 +12,76 @@
 </head>
 
 <body>
-    <header>
-        <a href="../fr/index.html"><img src="/public/img/logo_musee.svg" alt="logo site"></a>
-        <p>neo dream</p>
-        <a href=""><img src="/public/img/menu.svg" alt="menu hamburger"></a>
+    <header class="header">
+        <div>
+            <div class="header__item"><a href="../fr/index.html"><img src="/public/img/logo_musee.svg"
+                        alt="logo site"></a></div>
+            <div class="header__item">
+                <p class="header__content">neo dream</p>
+            </div>
+            <div class="header__item"><a href=""><img src="/public/img/menu.svg" alt="menu hamburger"></a></div>
+        </div>
     </header>
 
     <section>
-        <img src="/public/img/musee_civilisation.webp" alt="musée de la civilisation">
-        <h1>neo dream</h1>
-        <p>Vous avez toujours voulu savoir le domaine du néo-surréalisme ?</p>
-        <p>Alors venez découvrir le musée du Fondation Cartier</p>
+
+        <h1 class="header__title">neo dream</h1>
+        <img src="/public/img/musee_civilisation.webp" alt="musée de la civilisation" class="header__img">
+        <p class="header__text">Vous avez toujours voulu savoir le domaine du néo-surréalisme ?
+            Alors venez découvrir le
+            musée du Fondation Cartier</p>
     </section>
 
     <section>
-        <h2>Des artistes</h2>
+        <h2 class="body__title">Des artistes</h2>
 
-        <div>
+        <div class="img__artist">
             <img src="/public/img/victo-ngai.webp" alt="L'artiste Victo Ngai">
             <img src="/public/img/mark-ryden.webp" alt="L'artiste Mark Ryden">
+        </div>
+        <div class="img__artist">
             <img src="/public/img/david-lynch.webp" alt="L'artiste David Lynch">
             <img src="/public/img/haralampi.webp" alt="L'artiste Haralampi">
         </div>
 
-        <a href="/fr/artistes.html">En savoir plus</a>
+        <a href="/fr/artistes.html" class="button">En savoir plus</a>
 
-        <p>C'est quoi le néo-surréalisme ?</p>
+        <p class="body__inline">C'est quoi le néo-surréalisme ?</p>
     </section>
 
     <section>
-        <h2> Commandez vos tickets sans plus tarder !</h2>
+        <h2 class="body__title"> Commandez vos tickets sans plus tarder !</h2>
 
-        <p>Date de l'exposition : du 13 avril au 23 juin 2021</p>
-        <p>Lieu de l'exposition : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
-        <p>Horaires d'ouverture : Tous les jours de 11h à 20h, sauf le lundi. La fermeture des salles débute à 19h45
+        <p class="body__text">Date de l'exposition : du 13 avril au 23 juin 2021</p>
+        <p class="body__text">Lieu de l'exposition : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        <p class="body__text">Horaires d'ouverture : Tous les jours de 11h à 20h, sauf le lundi. La fermeture des salles
+            débute à 19h45
             (21h45 les mardis).</p>
     </section>
 
     <section>
-        <h3>Tarifs</h3>
+        <h3 class="body__section">Tarifs</h3>
 
-        <p>Plein tarif : 11€</p>
-        <p>Tarif réduit : 7,50€</p>
-        <p>Réduction 13-25 ans : 5€</p>
-        <p>Fondation Cartier Pass : 18€ - 50€</p>
-        <p>Moins de 13 ans, Laissez-passer annuel, cartelcom, carte de presse, carte d'invalidité, Fondation Cartier
+        <p class="body__text">Plein tarif : 11€</p>
+        <p class="body__text">Tarif réduit : 7,50€</p>
+        <p class="body__text">Réduction 13-25 ans : 5€</p>
+        <p class="body__text">Fondation Cartier Pass : 18€ - 50€</p>
+        <p class="body__text">Moins de 13 ans, Laissez-passer annuel, cartelcom, carte de presse, carte d'invalidité,
+            Fondation Cartier
             Pass, Etudiants : Gratuit</p>
 
-        <a href="/fr/reservation.html"></a>
+        <a href="/fr/reservation.html" class="button">Réservation</a>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div>
-            <a href="../fr/artistes.html">Artistes</a>
-            <a href="../fr/contact.html">Contact</a>
-            <p>© neo dream</p>
+            <ul class="footer__content">
+                <li class="footer__item"><a href="../fr/artistes.html">Artistes</a></li>
+                <li class="footer__item"><a href="../fr/contact.html">Contact</a></li>
+                <li class="footer__item">
+                    <p>© neo dream</p>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
