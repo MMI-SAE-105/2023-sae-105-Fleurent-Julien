@@ -12,13 +12,21 @@
 </head>
 
 <body>
-    <header>
-        <a href="../fr/index.html"><img src="/public/img/logo_musee.svg" alt="logo site"></a>
-        <p>neo dream</p>
-        <a href=""><img src="/public/img/menu.svg" alt="menu hamburger"></a>
+    <header class="header">
+        <div>
+            <div class="header__item"><a href="../fr/index.html"><img src="/public/img/logo_musee.svg"
+                        alt="logo site"></a></div>
+            <div class="header__item">
+                <p class="header__content">neo dream</p>
+            </div>
+            <div class="header__item"><a href=""><img src="/public/img/menu.svg" alt="menu hamburger"></a></div>
+        </div>
     </header>
 
-    <p>Si vous vous posez des questions par rapport au site où si il y a une erreur dedans, n'hésitez pas à faire un
+    <h1 class="header__contact">Contact</h1>
+
+    <p class="body__text">Si vous vous posez des questions par rapport au site où si il y a une erreur dedans,
+        n'hésitez pas à faire un
         retour !</p>
 
     <form action="#">
@@ -43,14 +51,18 @@
             <textarea rows=5 name="message" id="message"></textarea>
         </div>
 
-        <button type="submit" class="btn">Envoyer</button>
+        <button type="submit" class="button">Envoyer</button>
     </form>
 
-    <footer>
+    <footer class="footer">
         <div>
-            <a href="../fr/artistes.html">Artistes</a>
-            <a href="../fr/contact.html">Contact</a>
-            <p>© neo dream</p>
+            <ul class="footer__content">
+                <li class="footer__item"><a href="../fr/artistes.html">Artistes</a></li>
+                <li class="footer__item"><a href="../fr/contact.html">Contact</a></li>
+                <li class="footer__item">
+                    <p>© neo dream</p>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>

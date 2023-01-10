@@ -1,0 +1,5 @@
+.header__contact {
+    font-family: 'square peg';
+    font-size: var(--header-1);
+    text-align: center;
+}

@@ -33,3 +33,7 @@
     font-family: 'work sans';
     font-size: var(--body);
 }
+
+html {
+    background-color: var(--quartz);
+}

@@ -1,0 +1,25 @@
+label {
+    font-size: var(--body);
+    font-family: 'work sans';
+    display: flex;
+    margin-left: 35px;
+}
+
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+input,
+textarea {
+    font-size: var(--body);
+    font-family: 'work sans';
+    margin-left: 35px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 5%;
+    background-color: var(--blanc);
+    border-color: var(--menu);
+    border-width: 2px;
+}
