@@ -16,3 +16,8 @@
     font-family: 'work sans';
 
 }
+
+.noscroll,
+.noscroll body {
+    overflow: hidden;
+}

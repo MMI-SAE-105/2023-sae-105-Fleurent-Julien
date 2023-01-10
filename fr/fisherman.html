@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false,}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fisherman</title>
+    <link rel="alternate" hreflang="en" href="http://en.neo-dream.fr">
+    <link rel="icon" href="/public/img/logo_musee.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <div class="header__item"><a href="../fr/index.html"><img src="/public/img/logo_musee.svg"
+                        alt="logo site"></a></div>
+            <div class="header__item">
+                <p class="header__content">neo dream</p>
+            </div>
+            <div class="header__item"><img src="/public/img/menu.svg" alt="menu hamburger" aria-controls="mainNav"
+                    @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"></div>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                <ul>
+                    <li class="menu__item"><a href="/fr/artistes.html">Artistes</a></li>
+                    <li class="menu__item"><a href="/fr/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <img src="/public/img/lynch_fisherman.webp" alt="" class="oeuvre__img">
+    <h2 class="body__title">Fisherman’s Dream with Steam Iron</h2>
+    <p class="body__text">Artiste : David Lynch</p>
+    <p class="body__text">Date: 2012</p>
+    <p class="body__text">Lieu: Los Angeles, Californie</p>
+
+
+    <footer class="footer">
+        <div>
+            <ul class="footer__content">
+                <li class="footer__item"><a href="../fr/artistes.html">Artistes</a></li>
+                <li class="footer__item"><a href="../fr/contact.html">Contact</a></li>
+                <li class="footer__item">
+                    <p>© neo dream</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
