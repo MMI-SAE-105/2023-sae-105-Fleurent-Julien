@@ -1,0 +1,36 @@
+/* Positionnement de la frise */
+
+.arrow,
+.arrow::before {
+    border-left: 15px solid var(--menu);
+    height: auto;
+    width: 0;
+    position: relative;
+}
+
+.flex_arrow {
+    display: flex;
+    margin-left: 0;
+}
+
+/* Positionnement des images */
+
+.flex_section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+}
+
+/* Pointe de la frise */
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: -70px;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-top: 100px solid var(--menu);
+}
