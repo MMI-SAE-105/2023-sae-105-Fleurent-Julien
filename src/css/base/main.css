@@ -5,13 +5,6 @@ body {
 }
 
 
-.img__artist {
-    justify-content: space-evenly;
-    margin-top: 5%;
-    margin-inline: auto;
-    display: flex;
-}
-
 .body__title {
     text-align: center;
     font-family: 'work sans';

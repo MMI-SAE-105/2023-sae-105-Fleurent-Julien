@@ -1,0 +1,11 @@
+.artist_section {
+    margin-left: 30%;
+    text-decoration: none;
+}
+
+.img__artist {
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-inline: auto;
+    display: flex;
+}

@@ -12,52 +12,61 @@
 </head>
 
 <body>
-    <header>
-        <a href="../fr/index.html"><img src="/public/img/logo_musee.svg" alt="logo site"></a>
-        <p>neo dream</p>
-        <img src="/public/img/menu.svg" alt="menu hamburger">
+    <header class="header">
+        <div>
+            <div class="header__item"><a href="../fr/index.html"><img src="/public/img/logo_musee.svg"
+                        alt="logo site"></a></div>
+            <div class="header__item">
+                <p class="header__content">neo dream</p>
+            </div>
+            <div class="header__item"><a href=""><img src="/public/img/menu.svg" alt="menu hamburger"></a></div>
+        </div>
     </header>
 
-    <h1>Artistes</h1>
+    <h1 class="header__title">Artistes</h1>
 
-    <div class="flex_arrow">
+    <div class="flex__arrow">
         <hr class="arrow">
-        <div class="flex_section">
+        <div class="flex__section">
             <section>
-                <a href="david_lynch.html">
+                <a href="david_lynch.html" class="artist_section">
                     <img src="/public/img/david-lynch.webp" alt="l'artiste David Lynch">
-                    <h4>1946 - David Lynch</h4>
+                    <h4 class="artist__name">1946 - David Lynch</h4>
                 </a>
             </section>
 
             <section>
-                <a href="haralampi.html">
+                <a href="haralampi.html" class="artist_section">
                     <img src="/public/img/haralampi.webp" alt="l'artiste haralampi">
-                    <h4>1955 - Haralampi G. Oroschakoff</h4>
+                    <h4 class="artist__name">1955 - Haralampi G. Oroschakoff</h4>
                 </a>
             </section>
 
             <section>
-                <a href="mark_ryden.html">
+                <a href="mark_ryden.html" class="artist_section">
                     <img src="/public/img/mark-ryden.webp" alt="l'artiste Mark Ryden">
-                    <h4>1963 - Mark Ryden</h4>
+                    <h4 class="artist__name">1963 - Mark Ryden</h4>
                 </a>
             </section>
 
             <section>
-                <a href="victo_ngai.html">
+                <a href="victo_ngai.html" class="artist_section">
                     <img src="/public/img/victo-ngai.webp" alt="l'artise Victo Ngai">
-                    <h4>1988 - Victo Ngai</h4>
+                    <h4 class="artist__name">1988 - Victo Ngai</h4>
                 </a>
             </section>
         </div>
     </div>
 
-    <footer>
+    <footer class="footer">
         <div>
-            <a href="../fr/artistes.html">Artistes</a>
-            <a href="../fr/contact.html">Contact</a>
-            <p>© neo dream</p>
+            <ul class="footer__content">
+                <li class="footer__item"><a href="../fr/artistes.html">Artistes</a></li>
+                <li class="footer__item"><a href="../fr/contact.html">Contact</a></li>
+                <li class="footer__item">
+                    <p>© neo dream</p>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>

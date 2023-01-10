@@ -8,14 +8,14 @@
     position: relative;
 }
 
-.flex_arrow {
+.flex__arrow {
     display: flex;
     margin-left: 0;
 }
 
 /* Positionnement des images */
 
-.flex_section {
+.flex__section {
     display: flex;
     flex-direction: column;
     margin-bottom: 20%;

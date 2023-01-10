@@ -1,5 +1,13 @@
-.header__contact {
+.header__title {
     font-family: 'square peg';
     font-size: var(--header-1);
+    text-align: center;
+}
+
+.artist__name {
+    text-decoration: none;
+    color: var(--texte);
+    font-size: var(--header-2);
+    font-family: 'work sans';
     text-align: center;
 }
