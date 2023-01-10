@@ -1,0 +1,43 @@
+#accordeon {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+#accordeon li {
+    width: 107px;
+    overflow: hidden;
+    transition: width 1s;
+    background-color: #eee;
+    list-style: none;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#accordeon li.actif {
+    width: 317px;
+}
+
+#accordeon li figure {
+    margin: 0;
+    display: flex;
+    width: 317px;
+}
+
+#accordeon li figure img {
+    width: 107px;
+    height: 107px;
+}
+
+#accordeon li figure figcaption {
+    width: 200px;
+    padding: 10px;
+    vertical-align: center;
+    align-items: space-between;
+}
+
+#accordeon li figure figcaption {
+    margin: 0;
+    padding: 0;
+}

@@ -54,7 +54,18 @@
 
         <a href="/fr/artistes.html" class="button">En savoir plus</a>
 
-        <p class="body__inline">C'est quoi le néo-surréalisme ?</p>
+        <div class="accordeon">
+            <section x-data="{ open: true }">
+                <p class="body__inline" @click="open = ! open">C'est quoi le
+                    néo-surréalisme ?</p>
+                <p class="body__text" x-show="open" x-transition>Le néosurréalisme est un genre d’art illustrant des
+                    images complexes de
+                    rêve.
+                    Cela peut être aussi des visions dans un espace irrationnel.
+                </p>
+            </section>
+        </div>
+
     </section>
 
     <section>
