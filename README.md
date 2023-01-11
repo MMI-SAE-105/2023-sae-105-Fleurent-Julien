@@ -4,7 +4,10 @@
 - URL du site : http://neo-dream.jfleurent.fr
 - URL FIGMA : https://www.figma.com/file/xhkKpQDLwtohMYbHwo3NqE/SAE-105_Julien_Fleurent?node-id=0%3A1&t=8d5nCjaN2bxcIYOf-0
 - rapport light accueil : http://neo-dream.jfleurent.fr/reports/accueil.html
+
 - rapport light Index : http://neo-dream.jfleurent.fr/reports/fr/index.html
+
+- Rapport Lighthouse Artistes : http://neo-dream.jfleurent.fr/reports/fr/artistes.html
 
 # Structure de départ pour la SAE 105.
 
