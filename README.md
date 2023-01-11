@@ -4,7 +4,7 @@
 - URL du site : http://neo-dream.jfleurent.fr
 - URL FIGMA : https://www.figma.com/file/xhkKpQDLwtohMYbHwo3NqE/SAE-105_Julien_Fleurent?node-id=0%3A1&t=8d5nCjaN2bxcIYOf-0
 
-- rapport Lighthouse accueil : http://neo-dream.jfleurent.fr/reports/accueil.html
+- rapport Lighthouse Accueil : http://neo-dream.jfleurent.fr/reports/accueil.html
 
 - rapport Lighthouse Index : http://neo-dream.jfleurent.fr/reports/fr/index.html
 
@@ -13,6 +13,8 @@
 - Rapport Lighthouse Oeuvre : http://neo-dream.jfleurent.fr/reports/fr/untitled.html
 
 - Rapport Lighthouse Contact : http://neo-dream.jfleurent.fr/reports/fr/contact.html
+
+- rapport Lighthouse Erreur 404 : http://neo-dream.jfleurent.fr/reports/404.html
 
 # Structure de départ pour la SAE 105.
 
