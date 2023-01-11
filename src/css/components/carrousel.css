@@ -74,7 +74,8 @@
 }
 
 .carrousel_img {
-    margin-left: 20%;
+    margin-left: 5%;
+    max-width: 80%;
 }
 
 .carrousel__link {
