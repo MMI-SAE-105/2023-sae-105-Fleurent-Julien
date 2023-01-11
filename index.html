@@ -5,13 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="/public/img/logo_musee.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <title>Accueil</title>
 </head>
 
-<body>
-    <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'">Accueil en français</a>
+<body class="error__back">
 
-    <a href="../en/index.html" onclick="document.cookie = 'nf_lang=en; path=/'">Home in english</a>
+    <div>
+        <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/'" class="home__link">Accueil en
+            français
+            <img src="/public/img/drapeau-france.webp" alt="drapeau de la france" class="home__flag"></a>
+    </div>
+
+    <div>
+        <a href="../en/index.html" onclick="document.cookie = 'nf_lang=en; path=/'" class="home__link">Home in
+            english <img src="/public/img/drapeau-anglais.webp" alt="drapeau anglais" class="home__flag"></a>
+    </div>
 </body>
 
 </html>

@@ -33,3 +33,19 @@ body {
     font-family: 'work sans';
     font-size: var(--body);
 }
+
+.home__link {
+    text-decoration: none;
+    color: var(--blanc);
+    font-size: var(--header-2);
+    margin-bottom: 20%;
+    margin-top: 20%;
+    margin-left: 10%;
+    font-family: 'work sans';
+}
+
+.home__flag {
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
