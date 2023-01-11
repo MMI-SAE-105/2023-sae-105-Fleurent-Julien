@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<link rel="icon" href="/public/img/logo_musee.svg">
+<link rel="stylesheet" href="/src/css/styles.css">
+
+<body class="error__back">
+
+    <title>Erreur | 404</title>
+    <h1 class="error">Cet endroit n'est pas disponible</h1>
+    <H2 class="error__404">ERREUR 404</H2>
+    <form action="https://google.com/" method="GET" x-data="{ q:'', }"
+        x-on:submit="q = q + ' site:neo-dream.jfleurent.fr'">
+        <label for="q" class="error__text">Que cherchez-vous ?</label>
+        <input type="text" id="q" name="q" x-model="q" class="error__form">
+        <button type="submit" class="error_button">Rechercher</button>
+    </form>
+</body>
