@@ -4,7 +4,7 @@
  
   [[plugins.inputs.audits]]
     output_path="reports/accueil.html"
-    path = "" #la racine du site
+    path = "" 
 
     [[plugins.inputs.audits]]
     output_path="reports/fr/index.html"
@@ -13,5 +13,17 @@
     [[plugins.inputs.audits]]
     output_path="reports/fr/artistes.html"
     path = "/fr/artistes.html"  
+
+    [[plugins.inputs.audits]]
+    output_path="reports/fr/david_lynch.html"
+    path = "/fr/david_lynch.html" 
+
+    [[plugins.inputs.audits]]
+    output_path="reports/fr/untitled.html"
+    path = "/fr/untitled.html"  
+
+    [[plugins.inputs.audits]]
+    output_path="reports/fr/contact.html"
+    path = "/fr/contact.html"
 
  
