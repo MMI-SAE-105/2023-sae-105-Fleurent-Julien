@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false,}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neo dream</title>
+    <link rel="alternate" hreflang="en" href="http://en.neo-dream.fr">
+    <link rel="icon" href="/public/img/logo_musee.svg">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <div class="header__item"><a href="../fr/index.html"><img src="/public/img/logo_musee.svg"
+                        alt="logo site"></a></div>
+            <div class="header__item">
+                <p class="header__content">neo dream</p>
+            </div>
+            <div class="header__item"><img src="/public/img/menu.svg" alt="menu hamburger" aria-controls="mainNav"
+                    @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"></div>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                <ul>
+                    <li class="menu__item"><a href="/fr/artistes.html">Artistes</a></li>
+                    <li class="menu__item"><a href="/fr/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1 class="header__title">Victo Ngai</h1>
+
+    <section>
+        <div>
+            <img src="/public/img/victo-ngai.webp" alt="l'artiste Victo Ngai" class="artist_detail">
+
+            <p class="body__text">David Lynch est un peintre américain connu pour son style surréaliste.</p>
+            <p class="body__text"> Il est souvent caractérisé par son imagerie parfois violent pour ses films qu'on
+                pense
+                qu'il dérange voir
+                offenser le public.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="body__title">Œuvres créé</h2>
+
+        <div class="carrousel" x-data="{hrefCourant:'#image-1', '#image-2', '#image-3'}">
+            <a href="#image-1" class="carrousel_nom" :class="{actif:hrefCourant==='#image-1'}">
+                <p class="carrousel_list">Trois couleurs blanc</p>
+            </a>
+            <a href="#image-2" class="carrousel_nom" :class="{actif:hrefCourant==='#image-2'}">
+                <p class="carrousel_list">Frogfolio Utopia</p>
+            </a>
+            <a href="#image-3" class="carrousel_nom" :class="{actif:hrefCourant==='#image-3'}">
+                <p class="carrousel_list">Model Update</p>
+            </a>
+
+            <img src="/public/img/fleche_droite.svg" alt="icone fleche gauche" class="carrousel_btn carrousel_btn-avant"
+                aria-label="slide précedant" @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth">
+            <img src="/public/img/fleche_gauche.svg" alt="icone fleche gauche"
+                class="carrousel_btn carrousel_btn-apres fleche_droite" aria-label="slide suivant"
+                @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth">
+
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                                    hrefCourant = '#'+
+                                    [...$refs.parent.children]
+                                    .find(e=>e.getBoundingClientRect().x>=0)
+                                    .id ">
+
+
+                <div id="image-1" class="carrousel_ecran">
+                    <a href="trois-couleurs-blanc.html" class="carrousel__link">
+                        <figure>
+                            <img src="/public/img/trois-couleurs-blanc.webp" alt="Oeuvre de Victo Ngai"
+                                class="carrousel_img">
+                            <figcaption class="body__text">Trois couleurs blanc</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="image-2" class="carrousel_ecran">
+                    <a href="frogfolio-utopia.html" class="carrousel__link">
+                        <figure>
+                            <img src="/public/img/frogfolio-utopia.webp" alt="Oeuvre de Victo Ngai"
+                                class="carrousel_img">
+                            <figcaption class="figcaption__text">Frogfolio Utopia
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div id="image-3" class="carrousel_ecran block__art">
+                    <a href="model-update.html" class="carrousel__link">
+                        <figure>
+                            <img src="/public/img/model-update.webp" alt="Oeuvre de Victo Ngai" class="carrousel_img">
+                            <figcaption class="body__text">Model Update</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <ul class="footer__content">
+                <li class="footer__item"><a href="../fr/artistes.html">Artistes</a></li>
+                <li class="footer__item"><a href="../fr/contact.html">Contact</a></li>
+                <li class="footer__item">
+                    <p>© neo dream</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
