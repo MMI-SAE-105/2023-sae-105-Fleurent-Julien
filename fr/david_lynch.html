@@ -34,27 +34,33 @@
     <h1 class="header__title">David Lynch</h1>
 
     <section>
-        <img src="/public/img/david-lynch.webp" alt="l'artiste David Lynch" class="artist_detail">
+        <div>
+            <img src="/public/img/david-lynch.webp" alt="l'artiste David Lynch" class="artist_detail">
 
-        <p class="body__text">David Lynch est un peintre américain connu pour son style surréaliste.</p>
-        <p class="body__text"> Il est souvent caractérisé par son imagerie parfois violent pour ses films qu'on pense
-            qu'il dérange voir
-            offenser le public.</p>
+            <p class="body__text">David Lynch est un peintre américain connu pour son style surréaliste.</p>
+            <p class="body__text"> Il est souvent caractérisé par son imagerie parfois violent pour ses films qu'on
+                pense
+                qu'il dérange voir
+                offenser le public.</p>
+        </div>
     </section>
 
     <section>
         <h2 class="body__title">Œuvres créé</h2>
 
         <div class="carrousel" x-data="{hrefCourant:'#image-1', '#image-2', '#image-3'}">
-            <li class="carrousel_list"><a href="#image-1" class="carrousel_nom"
-                    :class="{actif:hrefCourant==='#image-1'}">Fisherman's Dream
-                    with Steam Iron</a></li>
-            <li class="carrousel_list"><a href="#image-2" class="carrousel_nom"
-                    :class="{actif:hrefCourant==='#image-2'}">A Figure Witnessing
+            <a href="#image-1" class="carrousel_nom" :class="{actif:hrefCourant==='#image-1'}">
+                <p class="carrousel_list">Fisherman's Dream
+                    with Steam Iron</p>
+            </a>
+            <a href="#image-2" class="carrousel_nom" :class="{actif:hrefCourant==='#image-2'}">
+                <p class="carrousel_list">A Figure Witnessing
                     the Ocherstration of
-                    Time</a></li>
-            <li class="carrousel_list"><a href="#image-3" class="carrousel_nom"
-                    :class="{actif:hrefCourant==='#image-3'}">Untitled</a></li>
+                    Time</p>
+            </a>
+            <a href="#image-3" class="carrousel_nom" :class="{actif:hrefCourant==='#image-3'}">
+                <p class="carrousel_list">Untitled</p>
+            </a>
 
             <img src="/public/img/fleche_droite.svg" alt="icone fleche gauche" class="carrousel_btn carrousel_btn-avant"
                 aria-label="slide précedant" @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth">
@@ -70,7 +76,7 @@
 
 
                 <div id="image-1" class="carrousel_ecran">
-                    <a href="fisherman.html">
+                    <a href="fisherman.html" class="carrousel__link">
                         <figure>
                             <img src="/public/img/lynch_fisherman.webp" alt="Oeuvre de David Lynch"
                                 class="carrousel_img">
@@ -79,20 +85,25 @@
                     </a>
                 </div>
                 <div id="image-2" class="carrousel_ecran">
-                    <figure>
-                        <img src="/public/img/lynch_a_figure_witnessing.webp" alt="Oeuvre de David Lynch"
-                            class="carrousel_img">
-                        <figcaption class="figcaption__text">A Figure Witnessing the Ocherstration of Time
-                        </figcaption>
-                    </figure>
+                    <a href="a-figure-witnessing.html" class="carrousel__link">
+                        <figure>
+                            <img src="/public/img/lynch_a_figure_witnessing.webp" alt="Oeuvre de David Lynch"
+                                class="carrousel_img">
+                            <figcaption class="figcaption__text">A Figure Witnessing the Ocherstration of Time
+                            </figcaption>
+                        </figure>
+                    </a>
                 </div>
                 <div id="image-3" class="carrousel_ecran block__art">
-                    <figure>
-                        <img src="/public/img/untitled.webp" alt="Oeuvre de David Lynch" class="carrousel_img">
-                        <figcaption class="body__text">Untitled</figcaption>
-                    </figure>
+                    <a href="untitled" class="carrousel__link">
+                        <figure>
+                            <img src="/public/img/untitled.webp" alt="Oeuvre de David Lynch" class="carrousel_img">
+                            <figcaption class="body__text">Untitled</figcaption>
+                        </figure>
+                    </a>
                 </div>
             </div>
+        </div>
     </section>
 
     <footer class="footer">

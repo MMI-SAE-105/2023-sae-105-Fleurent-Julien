@@ -34,3 +34,30 @@
     border-left: 100px solid transparent;
     border-top: 100px solid var(--menu);
 }
+
+
+/* Flèches pour changer de tableau de l'artiste */
+
+.arrow_lr {
+    margin-top: 5%;
+    margin-left: 5%;
+    display: block;
+    justify-content: space-between;
+}
+
+.arrow__right {
+    float: right;
+    margin-right: 5%;
+}
+
+.arrow__left {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.arrow__next {
+    display: inline-block;
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+}
